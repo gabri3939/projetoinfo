@@ -2,13 +2,91 @@
 <html lang="pt-BR">
 
 <head>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <title>AluraFlix</title>
+    <style>
+        body {
+            font-family: 'Chakra Petch', sans-serif;
+            margin: 0;
+            background-color: #f0f0f0;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #ff4757;
+            color: white;
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .chamada {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .chamada h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .chamada p {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        iframe {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .categoria {
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .categoria h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        .categoria-videos {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .categoria-videos a {
+            display: block;
+            width: 150px; /* largura fixa para os vídeos */
+            transition: transform 0.2s;
+        }
+
+        .categoria-videos a:hover {
+            transform: scale(1.05);
+        }
+
+        .categoria-videos img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
 </head>
 
 <body>
@@ -22,9 +100,8 @@
 
         <div>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/gt_fAE1Eg2Q?si=EEv-tsY_b1B2OwKE"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
         </div>
     </section>
 
@@ -32,19 +109,19 @@
         <h2>Filmes e séries</h2>
         <div class="categoria-videos">
             <a href="https://www.youtube.com/watch?v=cs15QqG6Gjc">
-                <img src="https://img.youtube.com/vi/cs15QqG6Gjc/maxresdefault.jpg" />
+                <img src="https://img.youtube.com/vi/cs15QqG6Gjc/maxresdefault.jpg" alt="Filme 1" />
             </a>
             <a href="https://www.youtube.com/watch?v=nCmIwcycUJ8">
-                <img src="https://img.youtube.com/vi/nCmIwcycUJ8/maxresdefault.jpg" />
+                <img src="https://img.youtube.com/vi/nCmIwcycUJ8/maxresdefault.jpg" alt="Filme 2" />
             </a>
             <a href="https://www.youtube.com/watch?v=FvRmEapoHRc">
-                <img src="https://img.youtube.com/vi/FvRmEapoHRc/maxresdefault.jpg" />
+                <img src="https://img.youtube.com/vi/FvRmEapoHRc/maxresdefault.jpg" alt="Filme 3" />
             </a>
             <a href="https://www.youtube.com/watch?v=Ipkw_hWW-Hw">
-                <img src="https://img.youtube.com/vi/Ipkw_hWW-Hw/maxresdefault.jpg" />
+                <img src="https://img.youtube.com/vi/Ipkw_hWW-Hw/maxresdefault.jpg" alt="Filme 4" />
             </a>
             <a href="https://www.youtube.com/watch?v=d4DzMNGoyis">
-                <img src="https://img.youtube.com/vi/d4DzMNGoyis/maxresdefault.jpg" />
+                <img src="https://img.youtube.com/vi/d4DzMNGoyis/maxresdefault.jpg" alt="Filme 5" />
             </a>
         </div>
     </section>
